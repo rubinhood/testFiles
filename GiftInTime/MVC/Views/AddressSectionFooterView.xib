@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJI-tx-tEb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQs-kq-OVe">
+                            <rect key="frame" x="52" y="0.0" width="106" height="25"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="12"/>
+                            <state key="normal" title="Dont have address?">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbC-Vv-H74">
+                            <rect key="frame" x="157" y="0.0" width="131" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="131" id="k8w-Nc-zcS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="12"/>
+                            <state key="normal" title="Let us request it for you.">
+                                <color key="titleColor" red="0.066666666669999999" green="0.20784313730000001" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98431372549999996" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="DQs-kq-OVe" secondAttribute="bottom" id="0FS-AG-HA3"/>
+                        <constraint firstItem="FbC-Vv-H74" firstAttribute="top" secondItem="uJI-tx-tEb" secondAttribute="top" id="0kO-I2-FFl"/>
+                        <constraint firstItem="FbC-Vv-H74" firstAttribute="leading" secondItem="DQs-kq-OVe" secondAttribute="trailing" constant="-1" id="8iA-ZQ-p0E"/>
+                        <constraint firstItem="DQs-kq-OVe" firstAttribute="top" secondItem="uJI-tx-tEb" secondAttribute="top" id="9BW-kP-L9P"/>
+                        <constraint firstItem="DQs-kq-OVe" firstAttribute="leading" secondItem="uJI-tx-tEb" secondAttribute="leading" constant="52" id="G28-06-VAP"/>
+                        <constraint firstAttribute="height" constant="25" id="GAO-VQ-g0E"/>
+                        <constraint firstAttribute="bottom" secondItem="FbC-Vv-H74" secondAttribute="bottom" id="KSE-i3-yyh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uJI-tx-tEb" secondAttribute="trailing" id="6qk-Ol-GXp"/>
+                <constraint firstAttribute="bottom" secondItem="uJI-tx-tEb" secondAttribute="bottom" id="Eg3-2n-Ffn"/>
+                <constraint firstItem="uJI-tx-tEb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HZ3-nk-KXg"/>
+                <constraint firstItem="uJI-tx-tEb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dpt-ia-zlm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="15" y="-312.5"/>
+        </view>
+    </objects>
+</document>

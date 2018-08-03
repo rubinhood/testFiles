@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Who-PT-zOd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="15" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8i-d1-Lwe">
+                            <rect key="frame" x="22" y="5" width="290" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="GZT-v7-M5H"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="V6u-bS-Laf"/>
+                        <constraint firstItem="m8i-d1-Lwe" firstAttribute="leading" secondItem="Who-PT-zOd" secondAttribute="leading" constant="22" id="yMm-jw-TW7"/>
+                        <constraint firstItem="m8i-d1-Lwe" firstAttribute="centerY" secondItem="Who-PT-zOd" secondAttribute="centerY" id="ybq-Zl-fpG"/>
+                        <constraint firstAttribute="trailing" secondItem="m8i-d1-Lwe" secondAttribute="trailing" constant="8" id="ypb-Fb-xGf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Who-PT-zOd" secondAttribute="trailing" id="K8g-d3-qJg"/>
+                <constraint firstItem="Who-PT-zOd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VOd-se-TVV"/>
+                <constraint firstItem="Who-PT-zOd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jro-js-CMn"/>
+                <constraint firstAttribute="bottom" secondItem="Who-PT-zOd" secondAttribute="bottom" id="x0z-dU-mQm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

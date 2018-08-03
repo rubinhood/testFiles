@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MailCell" id="KGk-i7-Jjw" customClass="MailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JH2-44-9EV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jamil's Address Received" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sul-lx-5Ew">
+                                <rect key="frame" x="15" y="15" width="153.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7CE-9w-rxp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="AdN-XE-Jm3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09.30.2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klV-JP-KgO">
+                                <rect key="frame" x="223" y="15" width="61" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="FBP-jc-0cW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="gci-dI-6Ub"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick2.png" translatesAutoresizingMaskIntoConstraints="NO" id="kJ4-Uf-uGU">
+                                <rect key="frame" x="292" y="17.5" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="4ib-vX-exJ"/>
+                                    <constraint firstAttribute="width" constant="16" id="aKG-Sz-WRO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You just Received the adress for HJmail. Although he has kept his address as private. Continue gifting." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0g-8P-iAR">
+                                <rect key="frame" x="15" y="38" width="293" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="ZLc-2w-wYM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="qK9-Nm-cgc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kJ4-Uf-uGU" firstAttribute="centerY" secondItem="sul-lx-5Ew" secondAttribute="centerY" id="3Jl-gF-Mzr"/>
+                            <constraint firstItem="sul-lx-5Ew" firstAttribute="leading" secondItem="JH2-44-9EV" secondAttribute="leading" constant="15" id="3xG-jM-NfF"/>
+                            <constraint firstAttribute="trailing" secondItem="kJ4-Uf-uGU" secondAttribute="trailing" constant="12" id="5Uk-Lb-dKp"/>
+                            <constraint firstAttribute="height" priority="1" constant="69" id="5pS-Dc-B36"/>
+                            <constraint firstAttribute="bottom" secondItem="R0g-8P-iAR" secondAttribute="bottom" constant="15" id="Pr7-d0-bWC"/>
+                            <constraint firstItem="R0g-8P-iAR" firstAttribute="top" secondItem="klV-JP-KgO" secondAttribute="bottom" constant="2" id="QxV-Hx-dgB"/>
+                            <constraint firstAttribute="trailing" secondItem="R0g-8P-iAR" secondAttribute="trailing" constant="12" id="UML-kB-Xyt"/>
+                            <constraint firstItem="R0g-8P-iAR" firstAttribute="top" secondItem="sul-lx-5Ew" secondAttribute="bottom" constant="2" id="UtA-gd-Gkx"/>
+                            <constraint firstItem="sul-lx-5Ew" firstAttribute="top" secondItem="JH2-44-9EV" secondAttribute="top" constant="15" id="aLM-D3-D6T"/>
+                            <constraint firstItem="kJ4-Uf-uGU" firstAttribute="leading" secondItem="klV-JP-KgO" secondAttribute="trailing" constant="8" id="auf-IA-ZhN"/>
+                            <constraint firstItem="klV-JP-KgO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sul-lx-5Ew" secondAttribute="trailing" constant="5" id="ddm-eY-MeJ"/>
+                            <constraint firstItem="R0g-8P-iAR" firstAttribute="leading" secondItem="JH2-44-9EV" secondAttribute="leading" constant="15" id="sFp-ec-Aig"/>
+                            <constraint firstItem="klV-JP-KgO" firstAttribute="centerY" secondItem="sul-lx-5Ew" secondAttribute="centerY" id="w0G-t1-Tc6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="JH2-44-9EV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Fg-xo-fEx"/>
+                    <constraint firstItem="JH2-44-9EV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="J8T-Gy-ZQN"/>
+                    <constraint firstAttribute="trailing" secondItem="JH2-44-9EV" secondAttribute="trailing" id="fQI-GR-r4h"/>
+                    <constraint firstAttribute="bottom" secondItem="JH2-44-9EV" secondAttribute="bottom" id="qpc-yR-IAY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tick2.png" width="150" height="150"/>
+    </resources>
+</document>

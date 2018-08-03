@@ -1,0 +1,125 @@
+//
+//  PrefixHeader.pch
+//  TaxiDriver
+//
+//  Created by Quick on 2/21/17.
+//  Copyright © 2017 Quick Technosoft Pvt. Ltd. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// main frames...
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "UIColor+ColorHex.h"
+// models...
+#import "AppDelegate.h"
+#import "HTTPConnection.h"
+#import "RemoveNull.h"
+#import "DataStoreClass.h"
+//#import "SocketsConnection.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+
+// third party classes...
+#import "KSToastView.h"
+#import "MBProgressHUD.h"
+
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+
+#define APP_GREEN_COLOR  0xFF86D2C1
+#define Acceptable_FloatCharecters @"0123456789."
+#define Acceptable_IntCharecters @"0123456789"
+#define PHONE_NUMBER_CHARECTERS  @"+0123456789"
+
+// Server connections....
+
+
+
+#define ServerPath @"http://staging.giftintime.com/mobile/"
+#define BasePath @"http://staging.giftintime.com/mobile/"
+#define USER_DETAILS @"UserProfile"
+
+// Server connections....
+#define USER_PROFILE @"UserProfile"
+#define AUTH_KEY @"user_auth_token"
+
+
+#define DataStoreClassInstance ((DataStoreClass *)[DataStoreClass sharedInstance])
+#define DataInstance ((DataStoreClass *)[DataStoreClass sharedInstance])
+
+
+
+// notifications...
+#define GPlaceKey @"AIzaSyAxyJICj2WgwUlQ6PLo5e_EasOKAEWuSLU"
+#define SYSTEM_VERSION_GRATERTHAN_OR_EQUALTO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define kNotificationUpdatePlane            @"kNotificationGettingAddress"
+#define kNotificationUpdateGooglePlace      @"kNotificationUpdateGooglePlace"
+
+
+#define kNotificationMessageReceive         @"kNotificationMessageReceive"
+#define kNotificationNewRequest             @"kNotificationNewRequest"
+#define kNotificationEventPicsSelect        @"NotificationEventPicsSelect"
+#define kNotificationSliderDrawerClosed     @"kNotificationSliderDrawerClosed"
+#define kNotificationProfileUpdated         @"kNotificationProfileUpdated"
+
+
+
+#define SERVICE_LOGIN                   1000
+#define SERVICE_SIGNUP                  1001
+#define SERVICE_LOGOUT                  1002
+#define SERVICE_WISHLISTS               1003
+#define SERVICE_EVENT_CATEGORIES        1004
+#define SERVICE_CATEGORIES              1005
+#define SERVICE_CONTACTS                1006
+#define SERVICE_EVENTS                  1007
+#define SERVICE_GET_GIFTPOINTS          1008
+#define SERVICE_GET_MY_WISHLIST         1009
+#define SERVICE_GET_FRIENDS_WISHLIST    1010
+#define SERVICE_FORGOT_PASSWORD         1011
+#define SERVICE_CHANGE_PASSWORD         1012
+#define SERVICE_UPDATE_PROFILE          1013
+#define SERVICE_GET_COUNTRIES           1014
+#define SERVICE_GET_STATES              1015
+#define SERVICE_GET_CATEGORIES          1016
+#define SERVICE_GET_SUBCATEGORIES       1017
+#define SERVICE_GET_PRODUCT_DETAILS     1018
+#define SERVICE_PENDING_ADDRESS_LIST    1019
+#define SERVICE_REREQUEST_ADDRESS       1020
+#define SERVICE_ADDTO_WISHLIST          1021
+
+
+#define FILE_LOGIN                      @"users/sign_in"
+#define FILE_SIGNUP                     @"users"
+#define FILE_LOGOUT                     @"users/logout"
+#define FILE_WISHLISTS                  @"wishlists"
+#define FILE_EVENT_CATEGORIES           @"event_categories"
+#define FILE_CATEGORIES                 @"categories"
+#define FILE_CONTACTS                   @"contacts"
+#define FILE_EVENTS                     @"events"
+#define FILE_GET_GIFTPOINTS             @"gift_points?user_auth_token="
+#define FILE_GET_MY_WISHLIST            @"wishlists?user_auth_token="
+#define FILE_GET_FRIENDS_WISHLIST       @"friends_wishlists?user_auth_token="
+#define FILE_PENDING_ADDRESS_LIST       @"users/pending_address_requests?user_auth_token="
+#define FILE_REREQUEST_ADDRESS          @"users/resend_address_request"
+#define FILE_FORGOT_PASSWORD            @"users/password_reset"
+#define FILE_CHANGE_PASSWORD            @"users/change_password"
+#define FILE_UPDATE_PROFILE             @"users/"
+#define FILE_GET_COUNTRIES              @"countries"
+#define FILE_GET_STATES                 @"countries/"
+#define FILE_GET_CATEGORIES             @"categories/"
+#define FILE_ADDTO_WISHLIST             @"wishlists"
+
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CalEventPicturesCell" reuseIdentifier="CalEventPicturesCell" id="gTV-IL-0wX" customClass="CalEventPicturesCell">
+            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkk-oh-AUy">
+                        <rect key="frame" x="0.0" y="0.0" width="32.5" height="32.5"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event-color.png" translatesAutoresizingMaskIntoConstraints="NO" id="Aca-8P-zBl">
+                                <rect key="frame" x="0.0" y="0.0" width="32.5" height="32.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Aca-8P-zBl" secondAttribute="trailing" id="A7r-FB-uQ6"/>
+                            <constraint firstAttribute="width" secondItem="wkk-oh-AUy" secondAttribute="height" multiplier="1:1" id="BZn-pU-dZ6"/>
+                            <constraint firstAttribute="trailing" secondItem="Aca-8P-zBl" secondAttribute="trailing" id="Goj-95-1dT"/>
+                            <constraint firstItem="Aca-8P-zBl" firstAttribute="leading" secondItem="wkk-oh-AUy" secondAttribute="leading" id="VRY-Mf-wkj"/>
+                            <constraint firstAttribute="bottom" secondItem="Aca-8P-zBl" secondAttribute="bottom" id="X15-Vy-0gZ"/>
+                            <constraint firstItem="Aca-8P-zBl" firstAttribute="top" secondItem="wkk-oh-AUy" secondAttribute="top" id="cc6-MX-zqv"/>
+                            <constraint firstItem="Aca-8P-zBl" firstAttribute="leading" secondItem="wkk-oh-AUy" secondAttribute="leading" id="gan-9G-mH5"/>
+                            <constraint firstAttribute="bottom" secondItem="Aca-8P-zBl" secondAttribute="bottom" id="k1R-gm-LoD"/>
+                            <constraint firstItem="Aca-8P-zBl" firstAttribute="top" secondItem="wkk-oh-AUy" secondAttribute="top" id="mIb-QE-neF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="wkk-oh-AUy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="f0i-hr-9v4"/>
+                <constraint firstAttribute="bottom" secondItem="wkk-oh-AUy" secondAttribute="bottom" id="kLM-3H-ryc"/>
+                <constraint firstAttribute="trailing" secondItem="wkk-oh-AUy" secondAttribute="trailing" id="tQm-fV-LWU"/>
+                <constraint firstItem="wkk-oh-AUy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vG6-rA-Bl0"/>
+            </constraints>
+            <connections>
+                <outlet property="mEventPicBgView" destination="wkk-oh-AUy" id="o6J-6n-JSP"/>
+                <outlet property="mEventPicView" destination="Aca-8P-zBl" id="g4t-s9-4Hq"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="event-color.png" width="200" height="200"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FrendzWishlistCell">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg4..png" translatesAutoresizingMaskIntoConstraints="NO" id="9KI-VT-Gaa">
+                        <rect key="frame" x="3" y="3" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="9KI-VT-Gaa" secondAttribute="height" multiplier="1:1" id="JsZ-Ky-uSm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ramesh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44R-ob-voS">
+                        <rect key="frame" x="3" y="49" width="64" height="18"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48710937500000001" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="dWs-ki-cca"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="44R-ob-voS" firstAttribute="leading" secondItem="9KI-VT-Gaa" secondAttribute="leading" id="6KK-Md-uou"/>
+                <constraint firstItem="9KI-VT-Gaa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="Azr-fH-Lnl"/>
+                <constraint firstAttribute="bottom" secondItem="9KI-VT-Gaa" secondAttribute="bottom" constant="3" id="DAu-5b-Gd7"/>
+                <constraint firstItem="44R-ob-voS" firstAttribute="trailing" secondItem="9KI-VT-Gaa" secondAttribute="trailing" id="R8u-H6-V1t"/>
+                <constraint firstAttribute="trailing" secondItem="9KI-VT-Gaa" secondAttribute="trailing" constant="3" id="uIh-I9-bVD"/>
+                <constraint firstItem="44R-ob-voS" firstAttribute="bottom" secondItem="9KI-VT-Gaa" secondAttribute="bottom" id="wod-9n-Nwf"/>
+                <constraint firstItem="9KI-VT-Gaa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="yTr-Rj-gg3"/>
+            </constraints>
+            <connections>
+                <outlet property="mFrendzName" destination="44R-ob-voS" id="wfg-RX-9YR"/>
+                <outlet property="mFrendzWishImage" destination="9KI-VT-Gaa" id="GhA-O6-MFg"/>
+            </connections>
+            <point key="canvasLocation" x="65" y="-8"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bg4..png" width="750" height="635"/>
+    </resources>
+</document>

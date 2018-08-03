@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CartPaymentOptionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfj-sW-0BN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit/Debit Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfi-6g-DCN">
+                                <rect key="frame" x="12" y="13" width="220" height="17"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUj-uN-Se0">
+                                <rect key="frame" x="240" y="7" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5s2-dQ-Y7e"/>
+                                    <constraint firstAttribute="width" constant="72" id="jVh-R3-flF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="14"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" red="0.1215686275" green="0.21960784310000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qfi-6g-DCN" firstAttribute="leading" secondItem="Rfj-sW-0BN" secondAttribute="leading" constant="12" id="5dU-db-Afu"/>
+                            <constraint firstItem="DUj-uN-Se0" firstAttribute="leading" secondItem="Qfi-6g-DCN" secondAttribute="trailing" constant="8" id="72N-nc-dxA"/>
+                            <constraint firstItem="DUj-uN-Se0" firstAttribute="centerY" secondItem="Rfj-sW-0BN" secondAttribute="centerY" id="PqA-0M-2RE"/>
+                            <constraint firstItem="Qfi-6g-DCN" firstAttribute="centerY" secondItem="Rfj-sW-0BN" secondAttribute="centerY" id="adb-Yd-DKU"/>
+                            <constraint firstAttribute="trailing" secondItem="DUj-uN-Se0" secondAttribute="trailing" constant="8" id="fPc-n6-tBe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Rfj-sW-0BN" secondAttribute="bottom" id="1qC-4Y-IpR"/>
+                    <constraint firstItem="Rfj-sW-0BN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LyP-hK-gzC"/>
+                    <constraint firstAttribute="trailing" secondItem="Rfj-sW-0BN" secondAttribute="trailing" id="OuD-eO-aby"/>
+                    <constraint firstItem="Rfj-sW-0BN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="q3p-Fy-6pP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+        </tableViewCell>
+    </objects>
+</document>
